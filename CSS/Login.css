@@ -1,0 +1,191 @@
+*{
+    margin:0px; 
+    padding:0px; 
+   
+}
+
+
+/* The Modal (background) */
+.modal {
+	display:none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+	transition: all 0.25s;
+}
+
+/* Login */
+
+.cont-login {
+    background-color:white;
+    margin: auto;
+    width:30%; 
+    min-height: 45vh;
+    padding-bottom: 30px;
+    transition: all 0.25s;
+    box-shadow: 0px 0px 5px black;
+    animation: zoom 0.6s
+    
+}
+
+.cont-login .cabecera{
+    width:100%;
+    height: 82px;
+    background-color: black;
+    padding-top:10px;
+    padding-left: 20px;
+    background-color: teal;
+}
+.cont-login .cabecera h3{
+    color:  white;
+    font-size: 21px;
+    float: left;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.cont-login .login{
+    background-color:white;
+    width: 100%;
+    padding-left:20px;
+    padding-top: 20px;
+}
+
+.cont-login .login input[type=text], input[type=password], input[type=email]{
+    outline:none;
+    position: relative;
+    width:95%;
+    padding: 10px;
+    border: 1px solid #CFCFCF;
+    margin-bottom: 20px;
+   
+}
+.cont-login .login input[type=text]:focus, input[type=password]:focus,input[type=email]:focus{
+    box-shadow: 0px 0px 0px 1px rgb(67, 161, 161);
+    transition: all 0.4s linear;
+}
+
+
+.cont-login .login button[type=submit]{
+    width: 95%;
+    height: 35px;
+    border: 1px solid black;
+    background-color: white;
+    transition: all 0.4s linear;
+}
+
+.cont-login .login button[type=submit]:hover{
+   background-color: teal;
+   color:  white;
+   transition: all 0.4s linear;
+}
+
+.cont-login p{
+    color:red;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* The Close Button (x) */
+
+/* Add Zoom Animation */
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+
+/* registre  */
+.cont-register {
+    background-color:white;
+    margin: auto;
+    width:50%; 
+    padding-bottom: 30px;
+    transition: all 0.25s;
+    box-shadow: 0px 0px 5px black;
+    animation: zoom 0.6s
+    
+}
+
+.cont-register .cabecera{
+    width:100%;
+    height: 82px;
+    background-color: black;
+    padding-top:10px;
+    padding-left: 20px;
+    background-color: teal;
+}
+.cont-register .cabecera h3{
+    color:  white;
+    font-size: 21px;
+    float: left;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.cont-register .login{
+    background-color:white;
+    width: 100%;
+  
+    padding-left:20px;
+    padding-top: 20px;
+}
+
+.cont-register .login input[type=text], input[type=password], input[type=email]{
+    outline:none;
+    position: relative;
+    width:95%;
+    padding: 10px;
+    border: 1px solid #CFCFCF;
+    margin-bottom: 20px;
+   
+}
+.cont-login .login input[type=text]:focus, input[type=password]:focus,input[type=email]:focus{
+    box-shadow: 0px 0px 0px 1px rgb(67, 161, 161);
+    transition: all 0.4s linear;
+}
+
+
+.cont-register .login button[type=submit]{
+    width: 50%;
+    display: block;
+    margin: auto;
+    height: 35px;
+    border: 1px solid black;
+    background-color: white;
+    transition: all 0.4s linear;
+}
+
+.cont-register .login button[type=submit]:hover{
+   background-color: teal;
+   color:  white;
+   transition: all 0.4s linear;
+}
+
+
+
+
+
+/* login reponsive */
+
+@media only screen and (max-width: 1200px){
+    .cont-login{     
+        width:50%; 
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .cont-login{     
+        width:60%; 
+    }
+}
+@media only screen and (max-width: 500px){
+    .cont-login{     
+        width:100%; 
+    }
+}
